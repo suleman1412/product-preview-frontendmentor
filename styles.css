@@ -107,3 +107,97 @@
 
 }
 
+@media only screen and (min-width:601px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--darkCyan);
+    }
+    .card{
+        display: flex;
+        width: 37.5em;
+        background-color: white;
+        border-radius: 1rem;
+        gap: 0.5rem;
+    }
+
+    img{
+        width: 100%;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .card_content{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 1rem;
+        overflow: hidden;
+    }
+
+    #tag{
+        font-family: var(--font1);
+        letter-spacing: 0.313rem;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: var(--neutral2);
+    }
+    #prodName{
+        font-family: var(--font2);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    #desc{
+        font-family: var(--font1);
+        color: var(--neutral1);
+        font-size: 0.875rem;
+    }
+    #pricing{
+        display: flex;
+        align-items: center;
+        gap: 0.8em;
+    }
+    #actualPrice{
+        font-family: var(--font2);
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--darkCyan);
+    }
+    #prevPrice{
+        font-family: var(--font1);
+        font-weight: 500;
+        text-decoration: line-through;
+        color: var(--neutral1);
+    }
+    .cart{
+        padding: 0 1rem 0.5rem;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        background-color: var(--darkCyan);
+        color: white;
+        font-family: var(--font1);
+        font-weight: 700;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        min-height: 3rem;
+        border: none;
+    }
+}
